@@ -47,7 +47,7 @@ justify-content: flex-start;
 
 .logo{
 
-    padding-left: 15px;
+    padding-left: 20px;
     padding-top: 30px;
     }
 
@@ -57,7 +57,7 @@ width: 130px;
 }
 
 .side_icon{
-    padding-left: 20px;
+    padding-left: 25px;
     padding-top: 40px;
     font-weight: 400;
     
@@ -77,11 +77,6 @@ width: 130px;
     font-weight: 400;
 }
 
-.middle_content{
-    background-color: #efefef;
-
-}
-
 .side_more{
     padding-left: 20px;
     padding-top: 60px;
@@ -90,7 +85,7 @@ width: 130px;
 
 .side_more img{
     height: 24px;
-    width: 26px;  
+    width: 28px;  
 }
 
 .side_more button{
@@ -106,12 +101,19 @@ width: 130px;
 {
     display: flex;
     flex-direction: row;
+    gap: 13px;
     width: 450px;
-    height: 130px;
+    height: 110px;
     background-color: #F5F6F7;
     border-radius: 10px;
-    border: 1px solid #BEC3C9;  
+    border: 1px solid #BEC3C9; 
+    padding-top: 20px;
     margin-top: 40px;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: justify;
+    text-align: center;
+    
     
 }
 
@@ -122,27 +124,36 @@ width: 130px;
     background-color: #F5F6F7;
 }
 
-.people_update img{
+.pro_image{
+    background: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(45deg, rgb(255, 230, 0), rgb(255, 0, 128) 80%);
+    
+}
 
-height: 60px;
-width: 60px;
-padding-left: 5px;
-padding-top: 20px;
+.pro_image img{
 
+    border: none;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
 }
 .status_update
 {
     display: flex;
     flex-direction: column;
     width: 450px;
-    height: 75vh;
+    height: 80vh;
     background-color: #F5F6F7;
     margin-top: 30px;
     border-radius: 10px;
     border: 1px solid #BEC3C9; 
 }
 
-.info{
+.story{
     width: 100%;
     height: 60px;
     display: flex;
@@ -151,32 +162,33 @@ padding-top: 20px;
   
     }
 
-.info .username{
+.story .user_name{
     width: auto;
-    font-weight: bold;
+    font-weight: 600;
     color: #000;
     font-size: 14px;
     
 }
 
-.info .options{
-    height: 10px;
-    cursor: pointer;
+.story .options{
+    height: 15px;
+    padding-right: 10px;
+    width: 15px;
 }
 
-.info .user{
+.story .user_story{
     display: flex;
     align-items: center;
 }
 
-.info .profile-pic{
+.story .profile-pic{
     height: 40px;
     width: 40px;
     padding: 0;
     background: none;
 }
 
-.info .profile-pic img{
+.story .profile-pic img{
     border: none;
 }
 
@@ -199,12 +211,11 @@ padding-top: 20px;
     width: 450px;
 }
 
-.username{
+.user_name{
     width: auto;
-    font-weight: bold;
-    color: #000;
-    font-size: 14px;
+    font-size: 12px;
     margin-left: 10px;
+    font-weight: 600;
 }
 
 .user_profile{
@@ -230,15 +241,18 @@ width: 100px;
     object-fit: cover;
 }
 
-.reaction-wrapper{
+.user_icons{
     width: 100%;
     height: 50px;
     display: flex;
     margin-top: -20px;
     align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+    
 }
 
-.reaction-wrapper .icon{
+.user_icons .icon{
     padding-top: 40px;
     height: 25px;
     margin: 0;
@@ -246,34 +260,40 @@ width: 100px;
     
 }
 
-.reaction-wrapper .icon.save{
+.user_icons .icon.save{
     margin-left: auto;
+    padding-right: 15px;
 }
 
-.likes{
-    font-weight: bold;
+.user_likes{
+    
     padding-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
-.description{
+.user_desc{
     margin: 10px 0;
     font-size: 14px;
     line-height: 20px;
     padding-left: 10px;
 }
-
-.description span{
-    font-weight: bold;
+.user_desc a{
+text-decoration: none;
+color: gray;
+}
+.user_desc span{
     margin-right: 10px;
+    font-weight: 600;
 }
 
-.post-time{
+.user_time{
     color: rgba(0, 0, 0, 0.5);
     font-size: 12px;
     padding-left: 10px;
 }
 
-.comment-wrapper{
+.user_comment{
     width: 100%;
     height: 50px;
     display: flex;
@@ -283,13 +303,13 @@ width: 100px;
     
 }
 
-.comment-wrapper .icon{
+.user_comment .icon{
     height: 30px;
     padding-left: 10px;
     
 }
 
-.comment-box{
+.user_commentbox{
     width: 100%;
     height: 95%;
     border: none;
@@ -298,7 +318,7 @@ width: 100px;
     background-color: #F5F6F7;
 }
 
-.comment-btn,
+.user_commentbtn,
 .action-btn{
     width: 70px;
     height: 100%;
@@ -306,9 +326,10 @@ width: 100px;
     border: none;
     outline: none;
     text-transform: capitalize;
-    font-size: 16px;
-    color: rgb(0, 162, 255);
+    font-size: 14px;
+    color: rgba(0, 162, 255, 0.686);
     opacity: 0.5;
+    font-weight: 400;
 }
 
 
