@@ -23,6 +23,7 @@ body{
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
+    margin-top: -15px;
 }
 
 .right{
@@ -108,7 +109,6 @@ width: 130px;
     border-radius: 10px;
     border: 1px solid #BEC3C9; 
     padding-top: 20px;
-    margin-top: 40px;
     justify-content: center;
     vertical-align: middle;
     text-align: justify;
@@ -140,6 +140,23 @@ width: 130px;
     height: 55px;
     width: 55px;
     border-radius: 50%;
+}
+
+.posts{
+    position: sticky;
+    top:1px;
+    border-radius: 40px;
+    padding:1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: white;
+    text-align: center;
+    margin-left: 250px;
+    font-size: 13px;
+    font-weight: 500;
+    width: fit-content;
+    border: 9px solid white;
+    
 }
 .status_update
 {
